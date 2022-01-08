@@ -1,0 +1,218 @@
+.hero {
+  background: url("/src/imgs/mike-kenneally-TD4DBagg2wE-unsplash.jpg") no-repeat
+    center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  display: grid;
+  place-items: center;
+}
+
+.hero-bg {
+  height: 100vh;
+}
+
+.hero-content {
+  color: white;
+  height: 100%;
+}
+
+.hero-text {
+  background-color: rgba(0, 0, 0, 0.267);
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.award {
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+.hero-title {
+  font-size: 72px;
+  margin: 0;
+}
+
+.hero-text {
+  font-weight: normal;
+}
+
+.hero-imgs {
+  display: none;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+.second-para {
+  position: absolute;
+  bottom: 17rem;
+  opacity: 0;
+}
+
+.testimonials {
+  background-color: var(--primaryclr);
+  box-shadow: 0 -2px 4px 2px rgba(0, 0, 0, 0.349);
+  padding-bottom: 4rem;
+}
+
+.test-title {
+  color: white;
+  padding: 2rem 0 1rem 0;
+  text-align: center;
+  font-weight: normal;
+}
+
+.cards-container {
+  background-color: rgba(0, 0, 0, 0.267);
+  backdrop-filter: blur(5px);
+  padding: 0 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.cards-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.315) 16%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.315) 80%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  z-index: 3;
+}
+
+.chevron {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+  cursor: pointer;
+}
+
+.chevron:hover {
+  background-color: rgba(0, 0, 0, 0.459);
+}
+
+.right-chevron {
+  right: 10px;
+}
+.left-chevron {
+  left: 10px;
+}
+
+.cards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(250px, 250px));
+  grid-auto-flow: column;
+}
+
+.card1 {
+  transform: scale(0.8) translateX(5rem);
+}
+
+.card2 {
+  z-index: 4;
+}
+
+.card3 {
+  transform: scale(0.8) translateX(-5rem);
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.746);
+  backdrop-filter: blur(3px);
+  padding: 1rem;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-img {
+  width: 100px;
+}
+
+.card-name h2 {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.card-name .state {
+  font-size: 0.7rem;
+}
+
+.quot {
+  width: 30px;
+  margin: auto;
+}
+
+.card-text {
+  padding-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 640px) {
+  .hero-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    min-height: 100%;
+    max-width: 600px;
+    overflow: hidden;
+  }
+
+  .hero-img2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  .hero-imgs img {
+    width: 100%;
+    filter: brightness(0.8);
+    display: block;
+  }
+}

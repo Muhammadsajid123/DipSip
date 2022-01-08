@@ -1,0 +1,1 @@
+let tlText=gsap.timeline({defaults:{duration:.5}});window.addEventListener("load",(function(){tlText.from(".header-wrapper",{delay:1,y:"-100%",ease:"power1.out",duration:1})}));let tlCup=gsap.timeline({defaults:{duration:1}});tlCup.fromTo(".steam",{x:-10,fill:"black",repeat:-1,yoyo:!0},{x:5,fill:"gray",repeat:-1,yoyo:!0});
