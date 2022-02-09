@@ -1,5 +1,5 @@
 .contacts {
-  background: url("/src/imgs/contacts.jpg") center center no-repeat fixed;
+  background: url("./dist/imgs/contacts.jpg") center center no-repeat fixed;
   background-size: cover;
   min-height: 100vh;
   display: grid;

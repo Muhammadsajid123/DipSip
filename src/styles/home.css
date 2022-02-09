@@ -1,6 +1,6 @@
 .hero {
-  background: url("/src/imgs/mike-kenneally-TD4DBagg2wE-unsplash.jpg") no-repeat
-    center center fixed;
+  background: url("./dist/imgs/mike-kenneally-TD4DBagg2wE-unsplash.jpg")
+    no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;

@@ -1,5 +1,5 @@
 .hero-products {
-  background: url("/src/imgs/Products-img.png") center center fixed no-repeat;
+  background: url("./dist/imgs/Products-img.png") center center fixed no-repeat;
   background-size: cover;
   min-height: 100vh;
   width: 100%;

@@ -119,6 +119,7 @@ let tlCup = gsap.timeline({
     duration: 1,
   },
 });
+
 tlCup.fromTo(
   ".steam",
   {
